@@ -1,8 +1,9 @@
 import Link from 'next/link';
 
 import { Background } from '../background/Background';
-import { Button } from '../button/Button';
-import { HeroOneButton } from '../hero/HeroOneButton';
+//mport { Button } from '../button/Button';
+//import { HeroOneButton } from '../hero/HeroOneButton';
+import { HeroNoButton } from '../hero/HeroNoButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
@@ -12,30 +13,33 @@ const Hero = () => (
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
+          <Link href="https://github.com/nickySmack">
             GitHub
           </Link>
         </li>
         <li>
-          <Link href="/">Sign in</Link>
+          <Link href="/">Honey Calculators</Link>
+        </li>
+        <li>
+          <Link href="/">Maple Calculators</Link>
         </li>
       </NavbarTwoColumns>
     </Section>
 
-    <Section yPadding="pt-20 pb-32">
-      <HeroOneButton
+    <Section yPadding="pt-20 pb-20">
+      <HeroNoButton
         title={
           <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developers</span>
+            {'The latest development landing page for\n'}
+            <span className="text-primary-500">Gifford Hill Gold.</span>
           </>
         }
-        description="The easiest way to build a React landing page in seconds."
-        button={
-          <Link href="https://creativedesignsguru.com/category/nextjs/">
-            <Button xl>Download Your Free Theme</Button>
-          </Link>
-        }
+        description="Leading the way in pure and natural sweeteners."
+        // button={
+        //   <Link href="https://creativedesignsguru.com/category/nextjs/">
+        //     <Button xl>Download Your Free Theme</Button>
+        //   </Link>
+        // }
       />
     </Section>
   </Background>
